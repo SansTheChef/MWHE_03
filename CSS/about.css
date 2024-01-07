@@ -69,6 +69,10 @@
 
 /* MAIN*/
 
+h1{
+    font-weight: bold;
+}
+
 main{
     padding-top: 3em;
     display: flex;
@@ -76,14 +80,87 @@ main{
     flex-direction: column;
 }
 
-main>div{
+main>section{
 
-    padding-top: 15em;
+    padding-top: 10em;
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 30%;
+    width: 100%;
     text-align: center;
 
     
+}
+
+main>section>div{
+    padding-top: 3em;
+    width: 30%;
+}
+
+main>section>#mapa{
+    padding-top: 3em;
+    width: 70%;
+}
+
+
+
+main>section>div>figure>img{
+    object-fit: contain;
+    width: 100%;
+}
+
+main>section>#stickers{
+    display: flex;
+    width: 60%;
+}
+
+main>section>#stickers>figure{
+    padding: 3em;
+}
+
+main>section>#stickers>figure>img{
+    object-fit: contain;
+    width: 100%;
+}
+
+button{
+    --bs-btn-bg: blueviolet;
+}
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: rgb(32, 31, 31);
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin: 1%;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+}
+
+#footer_logo {
+    display: flex;
+    align-items: center;
+}
+
+#footer_logo > img {
+    width: 80%;
+}
+
+#footer_text_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5%;
+}
+
+#footer_text > h1 {
+    font-size: 1em;
+    color: rgb(32, 31, 31);;
 }
