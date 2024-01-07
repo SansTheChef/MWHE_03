@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
-    background-color: rgb(32, 31, 31);
     color: white;
 }
 
@@ -77,6 +76,7 @@ main{
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: rgb(32, 31, 31);
 }
 
 main>section{
@@ -87,6 +87,7 @@ main>section{
     flex-direction: column;
     width: 100%;
     text-align: center;
+    padding-bottom: 5em;
 
     
 }
@@ -131,7 +132,7 @@ button{
 
 footer {
     width: 100%;
-    background-color: rgb(32, 31, 31);
+    background-color: rgb(223, 223, 223);
     display: flex;
     flex-direction: column;
 }
@@ -162,4 +163,133 @@ footer {
 #footer_text > h1 {
     font-size: 1em;
     color: rgb(32, 31, 31);;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1370px) {
+
+    main>section{
+
+        padding-top: 5em;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 3em;
+    
+        
+    }
+
+    main>section>div {
+    
+        width: 40%;
+    }
+
+    main>section>#stickers {
+
+        width: 70%;
+    }
+
+  
+}
+
+@media screen and (max-width: 1150px){
+
+    main>section>#mapa {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+
+    main>section>div {
+    
+        width: 60%;
+    }
+
+    main>section>#stickers {
+
+        width: 80%;
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+    
+
+    main>section{
+
+        padding-top: 4em;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 3em;
+    
+        
+    }
+}
+
+@media screen and (max-width: 830px) {
+
+    main>section>div {
+    
+        width: 80%;
+    }
+
+    main>section>#stickers>figure{
+
+        padding: 1em;
+    }
+
+}
+
+@media screen and (max-width: 750px){
+
+    main>section>#mapa {
+        width: 90%;
+    }
+
+}
+
+
+@media screen and (max-width: 630px) {
+
+    main>section>#stickers {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    main>section>#stickers>figure{
+
+        padding: 3em;
+    }
+
+    main>section>#stickers {
+
+        width: 70%;
+    }
+
+
+}
+
+@media screen and (max-width: 430px) {
+
+    main>section>div {
+    
+        width: 90%;
+    }
+
+    main>section>#stickers>figure{
+
+        padding: 1em;
+    }
+
 }
