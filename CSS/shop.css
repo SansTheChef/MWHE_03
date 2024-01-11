@@ -317,3 +317,51 @@ label{
         font-size: calc(3.375rem * var(--smaller));
     }
   }
+
+  @media screen and (max-width: 750px) {
+
+    header > p {
+        font-size: 1.5em;
+    }
+
+    #menu > i {
+        display: block;
+        cursor: pointer;
+    }
+
+    #menu > ul {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        padding: 30% 0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(28, 27, 27, 0.9);
+        transition-duration: 1s;
+    }
+
+
+    #menu > ul > li > a {
+        text-decoration: none;
+        font-size: 2em;
+    }
+
+    #menu > ul > li:last-child {
+        display: block;
+        position: absolute;
+        right: 2em;
+        top: 2em;
+    }
+
+    #menu > ul > li:last-child > i {
+        color: white;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    
+}
