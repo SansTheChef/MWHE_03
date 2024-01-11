@@ -7,12 +7,14 @@
     color: white;
 }
 
+h1{
+    font-weight: bold;
+}
 ::-webkit-scrollbar {display: none;}
 
 /* HEADER (MENU) */
 #head_menu {
     background-color: rgb(28, 27, 27);
-    position: fixed;
 }
 
 .navbar-brand > img {
