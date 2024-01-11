@@ -280,6 +280,11 @@ header{
     --bs-gradient: none;
 }
 
+.bg-body-tertiary {
+    --bs-bg-opacity: 0; 
+    background-color: rgba(var(--bs-tertiary-bg-rgb),var(--bs-bg-opacity))!important;
+}
+
 /* FOOTER */
 
 footer {
@@ -443,3 +448,25 @@ footer {
 
    
 }
+
+@media screen and (max-width: 400px) {
+
+    .footer {
+        margin: 1%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #footer_logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+
+   
+}
+
+

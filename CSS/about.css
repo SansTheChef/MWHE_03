@@ -451,3 +451,23 @@ footer {
 
 
 }
+
+@media screen and (max-width: 400px) {
+
+    .footer {
+        margin: 1%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #footer_logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+
+   
+}
