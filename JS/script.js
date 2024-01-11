@@ -45,6 +45,24 @@ $(document).ready(function () {
               //seconds
             }, 0)
         }());
+
+        //MENÚ
+
+  $("#menu i").click(function(){
+    
+    $("#menu ul").css("left" , "0%");
+
+
+  });
+
+  $("#menu ul .option").click(function(){
+    
+      $("#menu ul").css("left" , "-100%");
+
+
+  });
   
   });
+
+  
 
