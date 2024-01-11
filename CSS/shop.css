@@ -184,6 +184,7 @@ border: 0cm;
     --bs-btn-disabled-color: #fff;
     --bs-btn-disabled-bg:  rgb(240, 74, 14);
     --bs-btn-disabled-border-color:  rgb(240, 74, 14);
+    font-size: 1.5em;
 }
 
 /* FOOTER */
@@ -277,53 +278,42 @@ label{
     font-size: 2.5rem; 
 }
 
-/* MEDIA QUERIES */
+@media all and (max-width: 750px) {
 
-@media screen and (max-width: 750px) {
-
-    header > p {
+    .title>h1{
         font-size: 1.5em;
     }
-
-    #menu > i {
-        display: block;
-        cursor: pointer;
+    .title>h5{
+        font-size: 0.8em;
     }
-
-    #menu > ul {
-        position: fixed;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100vh;
-        z-index: 1;
-        padding: 30% 0;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        background-color: rgb(28, 27, 27, 0.9);
-        transition-duration: 1s;
+    .title>h4{
+        font-size: 0.8em;
     }
-
-
-    #menu > ul > li > a {
-        text-decoration: none;
-        font-size: 2em;
+    .hoodie{
+       width: auto;
+       height: auto;
+        background-image: url(/media/CAMISETA_NEGRA.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
     }
-
-    #menu > ul > li:last-child {
-        display: block;
-        position: absolute;
-        right: 2em;
-        top: 2em;
-    }
-
-    #menu > ul > li:last-child > i {
-        color: white;
-        font-size: 2em;
-        cursor: pointer;
-    }
-
     
-}
+    .caracteristicashoodie  {
+      display: flex;
+      padding: 25em;
+    }
+    .caracteristicashoodie>h5   {
+      font-size: calc(1.125rem * var(--smaller));
+    }
+    
+    .caracteristicashoodie>h1    {
+      font-size: calc(3.375rem * var(--smaller));
+    }
 
+    .textfooter {
+       padding: 4em;
+    }
+    .textfooter>h4 {
+        font-size: calc(3.375rem * var(--smaller));
+    }
+  }
