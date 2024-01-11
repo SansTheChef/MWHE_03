@@ -166,7 +166,14 @@ button{
     --bs-btn-disabled-color: #fff;
     --bs-btn-disabled-bg: rgb(240, 74, 14);
     --bs-btn-disabled-border-color: rgb(240, 74, 14);
+    text-decoration: none;
 }
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
 
 /* FOOTER */
 
